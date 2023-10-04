@@ -1,0 +1,5 @@
+To use differential privacy, you need to set a privacy budget. 
+The privacy budget is a parameter that controls the amount of noise that is added to the data. 
+A higher privacy budget will result in less noise being added to the data, but it will also reduce the accuracy of the statistical analysis.
+
+Once you have set a privacy budget, you can use a variety of different tools and libraries to add noise to your data and perform differential privacy analysis.
