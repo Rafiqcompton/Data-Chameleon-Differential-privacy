@@ -1,0 +1,32 @@
+import random
+
+def add_noise(data, epsilon):
+  """
+  Adds noise to the data using differential privacy.
+
+  Args:
+    data: The data to add noise to.
+    epsilon: The privacy budget.
+
+  Returns:
+    The data with noise added.
+  """
+
+  # Generate random noise
+  noise = random.laplace(0, epsilon / 2)
+
+  # Add the noise to the data
+  noisy_data = []
+  for i in range(len(data)):
+    noisy_data.append(data[i] + noise[i])
+
+  return noisy_data
+
+# Example usage:
+
+data = [1, 2, 3, 4, 5]
+epsilon = 0.1
+
+noisy_data = add_noise(data, epsilon)
+
+print(noisy_data)
