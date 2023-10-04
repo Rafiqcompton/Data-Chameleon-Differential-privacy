@@ -1,0 +1,5 @@
+Here are some guidelines for using differential privacy:
+
+Choose a privacy budget that is appropriate for your application.
+Use a reputable differential privacy library.
+Be careful not to over-use differential privacy, as this can reduce the accuracy of your statistical analysis.
